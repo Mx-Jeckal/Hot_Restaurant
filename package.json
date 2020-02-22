@@ -1,0 +1,19 @@
+{
+    "name": "hotrestaurant",
+    "version": "1.0.0",
+    "description": "5 top restaurant. Make your reservation today!",
+    "main": "server.js",
+    "dependencies": {
+        "express": "^4.16.3"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js",
+        "watch": "nodemon server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^2.0.2"
+    }
+}
