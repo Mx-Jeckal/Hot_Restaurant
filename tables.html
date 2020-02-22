@@ -1,97 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tables List</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Tables List</title>
-  <!-- Latest compiled and minified CSS & JS -->
-  <link rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <body>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h1 class="display-4 ">Hott Restaurant</h1>
+        <h3>Current Reservations and Waiting List</h3>
+        <hr />
 
-</head>
-
-<body>
-
-  <div class="container">
-    <div class="jumbotron text-center">
-      <h1 class = "display-4 ">Hott Restaurant</h1>
-      <h3>Current Reservations and Waiting List</h3>
-      <hr>
-      
-      <a href="/api/reservation"><button class="btn btn-danger btn-lg"><span
-            class="fa fa-calendar"></span> Make Reservation</button></a>
-      <a href=""><button class="btn btn-light btn-lg"><span class="fa fa-home"></span> Home </button></a>
-     
+        <a href="/add"
+          ><button class="btn btn-danger btn-lg">
+            <span class="fa fa-calendar"></span> Make Reservation
+          </button></a
+        >
+        <a href="/"
+          ><button class="btn btn-light btn-lg">
+            <span class="fa fa-home"></span> Home
+          </button></a
+        >
+      </div>
     </div>
+
+    <div class="container">
+      <div class="p-3 mb-2 bg-light text-dark">
+        <h2>Current Reservations</h2>
+      </div>
+      <div class="card1">
+        <div class="card-body">
+          <h5 class="card-title">Table 1</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" id="id">ID</li>
+            <li class="list-group-item" id="name">Name</li>
+            <li class="list-group-item" id="email">Email</li>
+            <li class="list-group-item" id="phoneNum">Phone</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card2">
+        <div class="card-body">
+          <h5 class="card-title">Table 2</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" id="id">ID</li>
+            <li class="list-group-item" id="name">Name</li>
+            <li class="list-group-item" id="email">Email</li>
+            <li class="list-group-item" id="phoneNum">Phone</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <div class="container" >
-        
-        <div class="p-3 mb-2 bg-light text-dark"><h2>Current Reservations</h2></div>
-            <div class="card1" >
-                <div class="card-body">
-                <h5 class="card-title">Table 1</h5>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item" id="id">ID</li>
-                    <li class="list-group-item" id="name">Name</li>
-                    <li class="list-group-item" id="email">Email</li>
-                    <li class="list-group-item" id="phoneNum">Phone</li>
-                  </ul>
-                </div>
-            </div>
-            <div class="card2" >
-                <div class="card-body">
-                <h5 class="card-title">Table 2</h5>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item" id="id">ID</li>
-                    <li class="list-group-item" id="name">Name</li>
-                    <li class="list-group-item" id="email">Email</li>
-                    <li class="list-group-item" id="phoneNum">Phone</li>
-                  </ul>
-                </div>
-            </div>
+    <div class="container">
+      <div class="p-3 mb-2 bg-light text-dark"><h2>Wait List</h2></div>
+      <div class="card1">
+        <div class="card-body">
+          <h5 class="card-title">Table 1</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" id="id">ID</li>
+            <li class="list-group-item" id="name">Name</li>
+            <li class="list-group-item" id="email">Email</li>
+            <li class="list-group-item" id="phoneNum">Phone</li>
+          </ul>
         </div>
-
-        <div class="container">
-            <div class="p-3 mb-2 bg-light text-dark"><h2>Wait List</h2></div>
-                <div class="card1"  >
-                    <div class="card-body">
-                    <h5 class="card-title">Table 1</h5>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" id="id">ID</li>
-                        <li class="list-group-item" id="name">Name</li>
-                        <li class="list-group-item" id="email">Email</li>
-                        <li class="list-group-item" id="phoneNum">Phone</li>
-                      </ul>
-                    </div>
-                </div>
-                <div class="card2" >
-                    <div class="card-body">
-                    <h5 class="card-title">Table 2</h5>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" id="id">ID</li>
-                        <li class="list-group-item" id="name">Name</li>
-                        <li class="list-group-item" id="email">Email</li>
-                        <li class="list-group-item" id="phoneNum">Phone</li>
-                      </ul>
-                    </div>
-                </div>
-            </div>
-
-    <footer class = "footer">
-        <div class = "container">
-          <p>
-            <a href - "./api/clear">Clear Table</a>
-            <a href - "./api/tables">API Table</a>
-            <a href - "./api/waitlist">API Wait List</a>
-          </p>
+      </div>
+      <div class="card2">
+        <div class="card-body">
+          <h5 class="card-title">Table 2</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" id="id">ID</li>
+            <li class="list-group-item" id="name">Name</li>
+            <li class="list-group-item" id="email">Email</li>
+            <li class="list-group-item" id="phoneNum">Phone</li>
+          </ul>
         </div>
-      </footer>
+      </div>
+    </div>
 
-</body>
-
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <a href="">Clear Table</a>
+          <a href="/api/reservations">API Table</a>
+          <a href="/api/waitList">API Wait List</a>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
